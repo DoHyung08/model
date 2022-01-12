@@ -200,7 +200,7 @@ body {
 .bar-container {
   height: 2.7rem;
 }
-.ilnam-box {
+.Lee-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -209,7 +209,7 @@ body {
   width: 100%;
   background-color: rgba(117, 204, 84, 0.2);
 }
-.ilnam-bar {
+.Lee-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -217,7 +217,7 @@ body {
   border-radius: 10px;
   background-color: rgba(117, 204, 84, 1);
 }
-.sangwoo-box {
+.Yun-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -226,7 +226,7 @@ body {
   width: 100%;
   background-color: rgba(117, 204, 84, 0.2);
 }
-.sangwoo-bar {
+.Yun-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -234,7 +234,7 @@ body {
   border-radius: 10px;
   background-color: rgba(117, 204, 84, 1);
 }
-.kihoon-box {
+.Ahn-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -243,7 +243,7 @@ body {
   width: 100%;
   background-color: rgba(27, 175, 234, 0.2);
 }
-.kihoon-bar {
+.Ahn-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -251,7 +251,7 @@ body {
   border-radius: 10px;
   background-color: rgba(27, 175, 234, 1);
 }
-.saebyeog-box {
+.F-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -260,7 +260,7 @@ body {
   width: 100%;
   background-color: rgba(251, 176, 59, 0.2);
 }
-.saebyeog-bar {
+.Sim-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -268,23 +268,7 @@ body {
   border-radius: 10px;
   background-color: rgba(251, 176, 59, 1);
 }
-.deoksu-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(195, 140, 102, 0.2);
-}
-.deoksu-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(195, 140, 102, 1);
-}
+
 /*.fox-box {
   position: absolute;
   top: 0;
@@ -340,24 +324,24 @@ body {
 .animal-explain {
     font-size: 1.5rem;
 }
-.ilnam-animal-title {
+.Lee-animal-title {
     color: #3ba363;
 }
-.ilnam-animal-celeb {
-    color: #3ba363;
-    font-size: 1.2rem;
-}
-.sangwoo-animal-title {
-    color: #3ba363;
-}
-.sangwoo-animal-celeb {
+.Lee-animal-celeb {
     color: #3ba363;
     font-size: 1.2rem;
 }
-.kihoon-animal-title {
+.Yun-animal-title {
+    color: #3ba363;
+}
+.Yun-animal-celeb {
+    color: #3ba363;
+    font-size: 1.2rem;
+}
+.Ahn-animal-title {
     color: #ff6c0a;
 }
-.kihoon-animal-celeb {
+.Ahn-animal-celeb {
     color: #ff6c0a;
     font-size: 1.2rem;
 }
@@ -368,12 +352,7 @@ body {
     color: #548dd4;
     font-size: 1.2rem;
 }
-.deoksu-animal-title {
-    color: #548dd4;
-}
-.deoksu-animal-celeb {
-    color: #548dd4;
-    font-size: 1.2rem;
+
 }
 /* 클래스가 더 많으면 넣으세요 */
 /* .rabbit-animal-title {
