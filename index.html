@@ -26,7 +26,7 @@
 
 <body>
   <script type="text/javascript">
-        const URL= "https://teachablemachine.withgoogle.com/models/F6cwTXR7c/";
+        const URL= "https://teachablemachine.withgoogle.com/models/Ck9UiSwFN/";
         
         let model, labelContainer, maxPredictions;
         async function init() {
@@ -48,29 +48,29 @@
         
             var resultTitle, resultExplain, resultCeleb, resultpic;
                switch (prediction[0].className) {
-                    case "Lee-jeamyung":
+                    case "Lee":
                         resultTitle = "이재명"
                         resultExplain = "더불어민주당의 대선 후보
                         resultCeleb = "전 경기도지사"
-                        resultpic = "./Lee-jeamyung.jpg"
+                        resultpic = "./Lee.jpg"
                         break;
-                    case "Yun-seokyeol":
+                    case "Yun":
                         resultTitle = "윤석열"
                         resultExplain = "국민의힘의 대선 후보"
                         resultCeleb = "전 검찰총장"
                         resultpic = "./sangwo.jpg"
                         break;
-                    case "Ahn-cheolsu":
-                        resultTitle = "오일남"
+                    case "Ahn":
+                        resultTitle = "안철수"
                         resultExplain = "국민의당의 대선후보"
                         resultCeleb = "국민의당 대표"
-                        resultpic = "./Ahn-cheolsu.jpg"
+                        resultpic = "./Ahn.jpg"
                         break;
-                    case "Sim-sangjung":
+                    case "Sim":
                         resultTitle = "심상정"
                         resultExplain = "정의당의 대선 후보"
                         resultCeleb = "21대 국회위원"
-                        resultpic = "./Sim-sangjung.jpg"
+                        resultpic = "./Sim.jpg"
                         break;    
                     default:
                         resultTitle = "알수없음"
@@ -97,17 +97,17 @@
                 }
                 var labelTitle;
                 switch (prediction[i].className) {
-                    case "Lee-jeamyung":
-                        labelTitle = "이재명(Lee-jeamyung)"
+                    case "Lee":
+                        labelTitle = "이재명(Lee)"
                         break;
-                    case "Yun-seokyeol":
-                        labelTitle = "윤석열(Yun-seokyeol)"
+                    case "Yun":
+                        labelTitle = "윤석열(Yun)"
                         break;
-                    case "Ahn-cheolsu":
-                        labelTitle = "안철수(Ahn-cheolsu)"
+                    case "Ahn":
+                        labelTitle = "안철수(Ahn)"
                         break;
-                    case "Sim-sangjung":
-                        labelTitle = "심상정(Sim-sangjung)"
+                    case "Sim":
+                        labelTitle = "심상정(Sim)"
                         break; 
                     default:
                         labelTitle = "알수없음"
