@@ -207,7 +207,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
+  background-color: #008CCD;
 }
 .Lee-bar {
   position: absolute;
@@ -215,7 +215,7 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
+  background-color: #004EA2;
 }
 .Yun-box {
   position: absolute;
@@ -224,7 +224,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
+  background-color: rgba(230, 30, 43, 0.61);
 }
 .Yun-bar {
   position: absolute;
@@ -232,7 +232,7 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
+  background-color: #E61E2B;
 }
 .Ahn-box {
   position: absolute;
@@ -241,7 +241,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(27, 175, 234, 0.2);
+  background-color: rgba(234, 85, 4, 0.596);
 }
 .Ahn-bar {
   position: absolute;
@@ -249,16 +249,16 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(27, 175, 234, 1);
+  background-color: #EA5504;
 }
-.F-box {
+.Sim-box {
   position: absolute;
   top: 0;
   left: 0;
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(251, 176, 59, 0.2);
+  background-color: rgba(255, 204, 0, 0.459);
 }
 .Sim-bar {
   position: absolute;
@@ -266,7 +266,7 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(251, 176, 59, 1);
+  background-color: #FFCC00;
 }
 
 /*.fox-box {
