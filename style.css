@@ -241,7 +241,7 @@ body {
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(234, 85, 4, 0.596);
+  background-color: #00860F;
 }
 .Ahn-bar {
   position: absolute;
@@ -249,7 +249,7 @@ body {
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: #EA5504;
+  background-color: #00B414;
 }
 .Sim-box {
   position: absolute;
