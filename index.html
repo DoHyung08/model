@@ -82,7 +82,7 @@
             var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
             var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
             var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
-            var pic = "<img src='" + resultpic +"'width='60%' heigt='auto'>"
+            var pic = "<img src='" + resultpic +"'width='30%' heigt='auto'>"
             $('.result-message').html(pic + title + explain + celeb );
             console.log(pic);
             var barWidth;
@@ -179,6 +179,8 @@
             </div>
             <p class="result-message"></p>
             <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_inline_share_toolbox"></div>
             <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
 
             <div class="pt-3 image-title-wrap">
@@ -226,7 +228,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 
-    
+
+  
+            
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61e0fedaec13804d"></script>
+
+
+
 </body>
 
 <footer class="footer pt-5 container d-flex justify-content-center">
