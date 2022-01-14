@@ -27,6 +27,7 @@
 <body>
   <script type="text/javascript">
         const URL= "https://teachablemachine.withgoogle.com/models/Ck9UiSwFN/";
+
         
         let model, labelContainer, maxPredictions;
         async function init() {
@@ -46,33 +47,48 @@
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
         
-            var resultTitle, resultExplain, resultCeleb, resultpic;
+            var resultTitle, resultExplain, resultCeleb, resultpic, resulturl;
                switch (prediction[0].className) {
                     case "Lee":
+                        resulturl_f = "https://www.facebook.com/jaemyunglee";
+                        resulturl_i = "https://www.instagram.com/2_jaemyung/?hl=ko";
+                        resulturl_y = "https://www.youtube.com/channel/UCNJM6dqu70Qr6VaseiW1Org";
                         resultTitle = "이재명"
-                        resultExplain = "더불어민주당의 대선 후보, \n전 경기도지사"
+                        resultExplain = "더불어민주당의 대선 후보, <br>전 경기도지사"
                         resultCeleb = "<a href = https://search.naver.com/search.naver?sm=tab_hty.top&where=news&query=%EC%9D%B4%EC%9E%AC%EB%AA%85&oquery=%EC%8B%AC%EC%83%81%EC%A0%95&tqi=hPZZCdp0J14ssMKFgS8ssssstWC-214698>관련기사</a>"
                         resultpic = "./Lee.jpg"
                         break;
                     case "Yun":
+                        resulturl_f = "https://www.facebook.com/sukyeol.yoon";
+                        resulturl_i = "https://www.instagram.com/sukyeol.yoon/?hl=ko";
+                        resulturl_y = "https://www.youtube.com/channel/UCcl16CxYqlbKQJVCfdhSJVw";
                         resultTitle = "윤석열"
-                        resultExplain = "국민의힘의 대선 후보, \n 전 검찰총장"
+                        resultExplain = "국민의힘의 대선 후보, <br>전 검찰총장"
                         resultCeleb = "<a href = https://search.naver.com/search.naver?sm=tab_hty.top&where=news&query=%EC%9C%A4%EC%84%9D%EC%97%B4&oquery=%EC%9D%B4%EC%9E%AC%EB%AA%85&tqi=hPZavwp0JywssNpfvPRssssstoV-522340>관련기사</a>"
                         resultpic = "./Yun.jpg"
                         break;
                     case "Ahn":
+                        resulturl_f = "https://www.facebook.com/ahncs111";
+                        resulturl_i = "https://www.instagram.com/ahncheolsoo/?hl=ko";
+                        resulturl_y = "https://www.youtube.com/user/jinsimcamp";
                         resultTitle = "안철수"
-                        resultExplain = "국민의당의 대선후보, \n 국민의당 대표"
+                        resultExplain = "국민의당의 대선후보, <br>국민의당 대표"
                         resultCeleb = "<a href = https://search.naver.com/search.naver?sm=tab_hty.top&where=news&query=%EC%95%88%EC%B2%A0%EC%88%98&oquery=%EC%9C%A4%EC%84%9D%EC%97%B4&tqi=hPZacwp0J14ssM0w5Uossssstgh-378583>관련기사</a>"
                         resultpic = "./Ahn.jpg"
                         break;
                     case "Sim":
+                        resulturl_f = "https://www.facebook.com/simsangjung";
+                        resulturl_i = "https://www.instagram.com/simparazzi/?hl=ko";
+                        resulturl_y = "https://www.youtube.com/c/simvatta";
                         resultTitle = "심상정"
-                        resultExplain = "정의당의 대선 후보, \n 21대 국회위원"
+                        resultExplain = "정의당의 대선 후보, <br>21대 국회위원"
                         resultCeleb = "<a href = https://search.naver.com/search.naver?sm=tab_hty.top&where=news&query=%EC%8B%AC%EC%83%81%EC%A0%95&oquery=%EC%9D%B4%EC%9E%AC%EB%AA%85&tqi=hPZvDdp0Yidssm7ie8Rssssssrw-131381>관련기사</a>"
                         resultpic = "./Sim.jpg"
                         break;
                     case "Heo":
+                        resulturl_f = "https://www.facebook.com/unhky";
+                        resulturl_i = "https://www.instagram.com/hky1950/?hl=ko";
+                        resulturl_y = "https://www.youtube.com/channel/UC4dErLdZUA5IecP6NpG5NBw";
                         resultTitle = "허경영"
                         resultExplain = "국가혁명당의 대선 후보, \n 정치인, 가수"
                         resultCeleb = "<a href = https://search.naver.com/search.naver?where=news&sm=tab_jum&query=%ED%97%88%EA%B2%BD%EC%98%81>관련기사</a>"
@@ -89,7 +105,11 @@
             var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
             var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
             var pic = "<img src='" + resultpic +"'width='30%' heigt='auto'>"
-            $('.result-message').html(pic + title + explain + celeb );
+            var fblink = '<h5>이 후보와 관련한 페이지<h5> <a href ='+ resulturl_f +' target="_blank"><img width = "5%" height = "auto" src = "./FBlogo.png"></a>'
+            var itlink = '<a href ='+ resulturl_i +' target="_blank"><img width = "5%" height = "auto" src = "./INlogo.png"></a>'
+            var ytlink = '<a href ='+ resulturl_y +' target="_blank"><img width = "5%" height = "auto" src = "./YTlogo.png"></a>'
+            
+            $('.result-message').html(pic + title + explain + celeb + fblink + itlink + ytlink );
             console.log(prediction);
             var barWidth;
             
@@ -187,7 +207,10 @@
                 <p class="text-center">AI가 당신의 얼굴을 분석중입니다.</p>
             </div>
             <p class="result-message"></p>
+
             <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+
+            
             
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
             <div class="addthis_inline_share_toolbox"></div>
