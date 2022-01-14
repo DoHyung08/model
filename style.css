@@ -268,6 +268,23 @@ body {
   border-radius: 10px;
   background-color: #FFCC00;
 }
+.Heo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(231, 20, 27, 0.425);
+}
+.Heo-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #E7141A;
+}
 
 /*.fox-box {
   position: absolute;
@@ -325,33 +342,41 @@ body {
     font-size: 1.5rem;
 }
 .Lee-animal-title {
-    color: #3ba363;
+    color: #008CCD;
 }
 .Lee-animal-celeb {
-    color: #3ba363;
+    color: #008CCD;
     font-size: 1.2rem;
 }
 .Yun-animal-title {
-    color: #3ba363;
+    color: #E61E2B;
 }
 .Yun-animal-celeb {
-    color: #3ba363;
+    color: #E61E2B;
     font-size: 1.2rem;
 }
 .Ahn-animal-title {
-    color: #ff6c0a;
+    color: #00B414;
 }
 .Ahn-animal-celeb {
-    color: #ff6c0a;
+    color: #00B414;
     font-size: 1.2rem;
 }
-.saebyeog-animal-title {
-    color: #548dd4;
+.Sim-animal-title {
+    color: #FFCC00;
 }
-.saebyeog-animal-celeb {
-    color: #548dd4;
+.Sim-animal-celeb {
+    color: #FFCC00;
     font-size: 1.2rem;
 }
+.Heo-animal-title {
+    color: #E7141A;
+}
+.Heo-animal-celeb {
+    color: #E7141A;
+    font-size: 1.2rem;
+}
+
 
 }
 /* 클래스가 더 많으면 넣으세요 */
